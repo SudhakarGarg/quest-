@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+body {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: 'Noto Serif', serif;
+  background-color: #f4f4f9; /* Light background color for contrast */
+  color: #333; /* Slightly darker text color */
+}
+
+p, h1, h2, h3, a, ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* nav & footer styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+nav h1 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+nav p, nav a {
+  color: #ccc;
+  font-weight: 300;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+ /* index styles */
+.blogs a {
+  display: block;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 6px solid crimson;
+  transition: background-color 0.3s;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blogs a:hover h3 {
+  color: crimson;
+}
+
+footer {
+  color: #ccc;
+  text-align: center;
+  margin: 80px auto 20px;
+  background-color: #333;
+  padding: 20px 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+/* headings styles */
+h2 {
+  margin-bottom: 40px;
+  color: #333;
+  border-bottom: 2px solid crimson;
+  padding-bottom: 10px;
+}
+
+h3 {
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.content {
+  margin-left: 20px;
+}
+
+/* create styles */
+.create-blog form {
+  max-width: 600px; /* Increased max-width for better form appearance */
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for form */
+  border-radius: 8px;
+}
+
+.create-blog input,
+.create-blog textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px; /* Increased padding for better input appearance */
+  border: 1px solid #ddd;
+  font-family: 'Noto Serif', serif;
+  font-size: 1em;
+  border-radius: 4px;
+}
+
+.create-blog label {
+  display: block;
+  margin-top: 24px;
+  color: #333;
+}
+
+textarea {
+  height: 150px; /* Increased height for better usability */
+}
+
+.create-blog button {
+  margin-top: 20px;
+  background: crimson; /* Updated button background color */
+  color: white;
+  padding: 12px; /* Increased padding for better button appearance */
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+}
+
+.create-blog button:hover {
+  background-color: #b3003b;
+  transform: translateY(-2px); /* Added transform effect */
+}
+
+/* details styles */
+.details {
+  position: relative;
+}
+
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+}
+
+.delete:hover {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  background-color: #b3003b;
+  transform: scale(1.1); /* Added scale effect */
+}
