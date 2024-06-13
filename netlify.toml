@@ -1,4 +1,13 @@
-[[redirects]]
+[build]
+base="/"
+command="npm install && npm run build "
+publish="public"
+
+[[redirects ]]
 from="/"
-to ="/index.html"
-status =200
+to"/index.html"
+status=200
+
+
+[context.production.environment]
+NODE_ENV="production"

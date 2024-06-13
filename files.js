@@ -8,16 +8,14 @@ fs.readFile('./docs/blog1.txt',(err,data)=>{
     console.log(data.toString());
 })
 
-console.log(' i love u ');
-
 
 // writing files
-fs.writeFile('./docs/blog1.txt', 'hello bugge , your bugga loves u so much ' ,()=>{
+fs.writeFile('./docs/blog1.txt', 'hello  ' ,()=>{
     console.log('file was written ');
 });
 
 
-fs.writeFile('./docs/blog2.txt', 'hello bugge , your bugga loves u so much ' ,()=>{
+fs.writeFile('./docs/blog2.txt', 'hello  ' ,()=>{
     console.log('file was written ');
 });
 

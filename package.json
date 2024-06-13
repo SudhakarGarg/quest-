@@ -4,8 +4,9 @@
   "main": "files.js",
   "directories": {
     "doc": "docs"
-  },
+  } ,
   "scripts": {
+    "build": "npm run build" , 
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
@@ -20,3 +21,4 @@
     "morgan": "^1.10.0"
   }
 }
+
