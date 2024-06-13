@@ -6,7 +6,8 @@
     "doc": "docs"
   } ,
   "scripts": {
-    "build": "npm run build" , 
+    "dev": "nodemon app.js",
+    "build": "npm app && nodemon app" , 
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
