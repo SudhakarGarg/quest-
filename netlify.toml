@@ -1,13 +1,22 @@
 [build]
-base="/"
-command="npm i"
-publish="public"
-
-[[redirects ]]
-from="/"
-to"/index.html"
-status=200
+  base = "/"
+  publish = "public" 
+  command = "npm i"
 
 
-[context.production.environment]
-NODE_ENV="production"
+[build.environment]
+  NODE_ENV = "production"
+
+
+[context.production]
+  [context.production.environment]
+    NODE_ENV = "production"
+
+[context.deploy-preview]
+  [context.deploy-preview.environment]
+    NODE_ENV = "development"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
