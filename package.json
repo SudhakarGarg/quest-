@@ -8,7 +8,7 @@
   } ,
   "scripts": {
     "dev": "nodemon app.js",
-    "build": "npm app && nodemon app" , 
+    "build":"npm i" , 
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
